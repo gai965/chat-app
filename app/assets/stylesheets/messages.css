@@ -1,0 +1,181 @@
+
+.wrapper {
+  display: flex;
+}
+
+/* サイドバーのレイアウト */
+.side_block{
+  height:100vh;
+  width: 300px;
+  background-color: #253141;
+}
+
+/* サイドバーのトップ(上側)のレイアウト */
+.side_top{
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+/* ユーザ名表示のレイアウト(a要素に適用)*/
+.top_name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  /* 文字のアンダーラインを消す役割 */
+  text-decoration: none;
+}
+
+/* チャット作成リンクのレイアウト */
+.new_chatroom{
+  font-size: 10px;
+} 
+
+/* チャット作成リンクのレイアウト(a要素に適用)*/
+.new_chatroom a{
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  padding: 14px;
+  text-decoration: none;  
+}
+
+/* サイドバーのダウン(下側)のレイアウト */
+.side_down{
+  height: calc(100vh - 100px);
+  background-color: #2F3E51;
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+/* チャットルーム一覧のレイアウト */
+.rooms_show{
+  color: white;
+}
+
+/* 各チャットルームのレイアウト */
+.room {
+  padding: 20px 0 40px;
+}
+.room a{
+  text-decoration: none;
+  color: white;
+}
+
+/* チャットバーのレイアウト */
+.chat_block{
+  width: calc(100% - 300px);
+  background-color: #ffffff;
+}
+
+/* チャットバーのトップ(上側)のレイアウト */
+.chat_top{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* チャット名を表示するレイアウト */
+.group_name{
+  font-size: 24px;
+  color: #333;
+  margin-top: 36px;
+}
+
+
+/* 「チャットを終了する」のレイアウト */
+.end_chatroom{
+  margin-top: 40px;
+}
+
+/* 「チャットを終了する」のa要素のレイアウト */
+.end_chatroom a{
+  color: darkred;
+  border: 1px solid darkred;
+  text-decoration: none;
+  padding: 20px;
+}
+
+/* チャットバーのミドル(中側)のレイアウト */
+.chat_middle{
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+/* チャット情報のブロックレベルのレイアウト */
+.chat_info{
+  margin-bottom: 40px; 
+}
+
+.up_info{
+  display: flex;
+  margin: 10px 0px; 
+}
+
+.chat_name{
+  font-size: 16px;
+  color: #434A54;
+  margin-right: 10px; 
+}
+
+.post_time{
+  font-size: 12px;
+  color: #999; 
+}
+
+.down_info{
+  margin-bottom: 10px; 
+}
+
+.post_message{
+  font-size: 14px;
+  color: #434A54;
+}
+
+/* チャットバーのダウン(下側)のレイアウト */
+.chat_down{
+  height: 90px;
+  background-color: #DDDDDD;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.form{
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.text{
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+}
+
+.bottan{
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
