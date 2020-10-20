@@ -3,7 +3,7 @@
 
   <%# ユーザー名表示 %>
   <div class="top_name">
-    <a href="#">Gai</a>
+    <%= link_to current_user.name, edit_user_path(current_user) %>  
   </div>
 
   <%# チャット作成リンク %>
