@@ -14,6 +14,7 @@
 .side_top{
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
   display: flex;
   justify-content: space-between;
   align-items: center; 
@@ -43,7 +44,7 @@
 /* サイドバーのダウン(下側)のレイアウト */
 .side_down{
   height: calc(100vh - 100px);
-  background-color: #2F3E51;
+  /* background-color: #2F3E51; */
   padding: 0 20px;
   overflow: scroll;
 }
