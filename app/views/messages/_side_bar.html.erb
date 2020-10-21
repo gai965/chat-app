@@ -8,7 +8,7 @@
 
   <%# チャット作成リンク %>
   <div class="new_chatroom">
-    <a href="#">チャットリンクを作成する</a>
+    <%= link_to "チャットを作成する", new_room_path %>
   </div>
 </div>
 
@@ -17,11 +17,14 @@
 
   <%# チャット一覧のレイアウト %>
   <div class= "rooms_show">
-    <div class= "room">
-      <a href="#">techroom1</a>
-    </div>
-    <div class= "room">
-      <a href="">techroom2</a>
-    </div>
+    <% current_user.rooms.each do |room| %>
+      <div class="room">
+        <div class="room-name">
+          <a href="#"><%= room.name %></a>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
+
+room[user_ids][]
