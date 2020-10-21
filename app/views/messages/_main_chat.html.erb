@@ -14,25 +14,7 @@
 
 <%# チャットルーム中部のレイアウト %>
 <div class= "chat_middle">
-  <div class= "chat_info">
-    <div class= "up_info">
-      <div class= "chat_name">がい</div>
-      <div class= "post_taime">2020年10月18日</div>
-    </div>
-    <div class= "down_info">
-     <div class= "post_message">お元気です</div>
-    </div>
-  </div>
-
-  <div class= "chat_info">
-    <div class= "up_info">
-     <div class= "chat_name">ああああ</div>
-     <div class= "post_taime">2020年10月19日</div>
-    </div>
-    <div class= "down_info">
-     <div class= "post_message">疲れています。</div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%# チャットルーム下側のレイアウト %>
