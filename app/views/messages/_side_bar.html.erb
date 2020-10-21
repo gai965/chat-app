@@ -1,30 +1,32 @@
-<%# サイドバーの上側 %>
-<div class="side_top">
+ <%# サイドバーのレイアウト %>
+<div class= "side_block">
 
-  <%# ユーザー名表示 %>
-  <div class="top_name">
-    <%= link_to current_user.name, edit_user_path(current_user) %>  
+  <%# サイドバーの上側 %>
+  <div class="side_top">
+
+    <%# ユーザー名表示 %>
+    <div class="top_name">
+      <%= link_to current_user.name, edit_user_path(current_user) %>  
+    </div>
+
+    <%# チャット作成リンク %>
+    <div class="new_chatroom">
+      <%= link_to "チャットを作成する", new_room_path %>
+    </div>
   </div>
 
-  <%# チャット作成リンク %>
-  <div class="new_chatroom">
-    <%= link_to "チャットを作成する", new_room_path %>
-  </div>
-</div>
+  <%# サイドバーの下側 %>
+  <div class="side_down">
 
-<%# サイドバーの下側 %>
-<div class="side_down">
-
-  <%# チャット一覧のレイアウト %>
-  <div class= "rooms_show">
-    <% current_user.rooms.each do |room| %>
-      <div class="room">
-        <div class="room-name">
-          <a href="#"><%= room.name %></a>
+    <%# チャット一覧のレイアウト %>
+    <div class= "rooms_show">
+      <% current_user.rooms.each do |room| %>
+        <div class="room">
+          <div class="room-name">
+            <a href="#"><%= room.name %></a>
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
-
-room[user_ids][]
